@@ -43,7 +43,7 @@ bool aLessB(const unsigned int& x, const unsigned int& y, unsigned int pow) {
 }
 
 //Single thread
-void BucketSort::sortSingle(unsigned int numCores){
+void BucketSort::sort_singleThread(unsigned int numCores){
         std::sort(numbersToSort.begin(),numbersToSort.end(), [](const unsigned int& x, const unsigned int& y){
                 return aLessB(x,y,0);
         } );
